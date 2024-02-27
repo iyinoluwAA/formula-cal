@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css ">
+</head>
+<body>
+     <h1 class></h1>
+    <h1 class="text-center">Triangle</h1>
+    <input type="text" class="form-control my-2" placeholder="base" id="bas">
+    <input type="text" class="form-control my-2" placeholder="height" id="hei">
+    <button onclick="tri()">calculate</button>
+     
+    <h1 class="text-center">Body mass index</h1>
+    <input type="text" class="form-control my-2" placeholder="kilogram" id="kg">
+    <input type="text" class="form-control my-2" placeholder="mass" id="m">
+    <button onclick="bmi()">calculate</button>
+    
+    <h1 class="text-center">circle</h1>
+    <input type="text" class="form-control my-2" placeholder="radius" id="rad">
+    <button onclick="cir()">calculate</button>
+
+    <script>
+        function tri() {
+            alert('The area of the triangle is ' + 0.5*bas.value * hei.value + 'cm²')
+        }
+        function bmi() {
+            alert(kg.value / (m.value * m.value))
+        }
+        function cir() {
+            alert((22/7) * rad.value * rad.value)
+        }
+    </script>
+</html>
